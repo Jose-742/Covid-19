@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(32, 33, 36);
+}
+#logo:hover{
+    color: rgb(14, 69, 221);
+}
+
+.coluna1{
+    background-color: rgb(26, 26, 29);
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    padding: 25px;
+}
+
+.coluna1:hover{
+    /*border: 3px solid rgb(14, 69, 221);/*rgb(14, 221, 14) ;*/
+    box-shadow: 0 5px 15px rgb(14, 69, 221);
+}
+
+#botao{
+    margin: 15px  0px  10px  0px;
+    /*background-color: rgb(14, 69, 221);*/
+}
+
+#resultado{
+   /* border: 1px solid green;*/
+    background-color: rgb(26, 26, 29);
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.699);
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+}
+#resultado:hover{
+   /* border: 3px solid rgb(14, 69, 221);/*rgb(14, 221, 14) ;*/
+    box-shadow: 0 5px 15px rgb(14, 69, 221);
+}
+
+@media (max-width: 576px) {
+    .coluna1{
+        background-color: rgb(26, 26, 29);
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #resultado{
+         background-color: rgb(26, 26, 29);
+         margin-top: 10px;
+         color: rgba(255, 255, 255, 0.699);
+         border-radius: 15px;
+         width: 100%;
+         height: 300px;
+         padding: 10px;
+     }
+     #botao{
+         width: 100%;
+     }
+}
+@media (min-width: 577px) and (max-width: 1199.98px) { 
+    .coluna1{
+        background-color: rgb(26, 26, 29);
+        border-radius: 15px;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    #resultado{
+        /* border: 1px solid green;*/
+         background-color: rgb(26, 26, 29);
+         color: rgba(255, 255, 255, 0.699);
+         border-radius: 15px;
+         width: 100%;
+         height: 300px;
+         padding: 10px;
+     }
+}
+
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #60686d;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    background-color: rgb(26, 26, 29);
+}
+
+/*.fundo{
+    background-color: rgb(26, 26, 29);
+}*/
+
+#myFooter .fa{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #645e5e;
+    border-radius: 51%;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+}
+
+#myFooter .fa-facebook:hover{
+   color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus{
+    color: #2b55ff; 
+}
+
+#myFooter .fa-instagram:hover{
+    color:purple;
+}
+
+#myFooter .fa-instagram:focus{
+    color:purple;
+}
+
+#myFooter .fa-whatsapp:hover{
+    color:rgb(57, 230, 14);
+}
+
+#myFooter .fa-whatsapp:focus{
+    color:rgb(57, 230, 14);
+}
+
+#myFooter .fa-twitter:hover{
+    color: #00aced;
+
+}
+
+#myFooter .fa-twitter:focus{
+    color:#00aced;
+}
+/*usado para fixar o conteudo no final do site*/
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
