@@ -147,6 +147,12 @@ body{
     transition:color 0.2s;
 }
 
+/*carregamento*/
+#loading{
+    text-align: center;
+   margin-top: 70px;
+}
+
 #myFooter .fa-face:hover{ /*OK*/
    color: #2b55ff;
 }

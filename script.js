@@ -13,7 +13,19 @@ function criaAjaxGet(url, funcao) {
 function requisicao() {
     let select = document.getElementById("selecao").value
 
-    //console.log(select)
+    document.getElementById('resultado').innerHTML = ''
+				
+				//incluir o gif de loading na página
+				if(!document.getElementById('loading')) {
+					let imgLoading = document.createElement('img')
+					imgLoading.id = 'loading'
+					imgLoading.src = 'img/carregando2.gif'
+					imgLoading.className = 'rounded mx-auto d-block'
+
+					document.getElementById('resultado').appendChild(imgLoading)
+				}
+
+   
     let url = 'https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/' + select;
     criaAjaxGet(url, resposta)
 }
