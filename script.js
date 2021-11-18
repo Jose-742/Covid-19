@@ -38,6 +38,7 @@ function resposta() {
 
         let resultado = document.getElementById("resultado")
         resultado.innerHTML = "";
+        resultado.className = "result"
 
         let b1 = document.createElement("b") /* ESTADO */
         b1.innerHTML = "<ion-icon name='business-outline'></ion-icon> Estado: " 
@@ -48,15 +49,21 @@ function resposta() {
         resultado.appendChild(p1)
 
         let b2 = document.createElement("b") /* DATA E HORA*/
-        b2.innerHTML = "<ion-icon name='time-outline'></ion-icon> Atualizado: " 
+        b2.innerHTML = "<ion-icon class='horas' name='time-outline'></ion-icon> Atualizado: " 
         let p2 = document.createElement("p")
         let text2 = document.createTextNode(data_hora)
+        let dat = new Date(text2.data)
+        let ano = dat.toISOString().substr(0, 4)
+        let mes = dat.toISOString().substr(5, 2)
+        let dia = dat.toISOString().substr(8, 2)
+        //console.log( dia + "/" + mes + "/" + ano)
+        let resutlData  = document.createTextNode(dia + "/" + mes + "/" + ano)
         p2.appendChild(b2)
-        p2.appendChild(text2)
+        p2.appendChild(resutlData)
         resultado.appendChild(p2)
 
-        let b3 = document.createElement("b") /* MORTES*/
-        b3.innerHTML = "<ion-icon name='skull-outline'></ion-icon> Mortos: " 
+        let b3 = document.createElement("b") /* MORTES*/ 
+        b3.innerHTML = "<ion-icon class='caveira' name='skull-outline'></ion-icon> Mortos: " 
         let p3 = document.createElement("p")
         let text3 = document.createTextNode(mortes)
         
@@ -66,15 +73,15 @@ function resposta() {
         resultado.appendChild(p3)
 
         let b4 = document.createElement("b") /*SUSPEITOS*/
-        b4.innerHTML = "<ion-icon name='bag-remove-outline'></ion-icon> Suspeitos: " 
+        b4.innerHTML = "<ion-icon class='suspeitos' name='bag-remove-outline'></ion-icon> Suspeitos: " 
         let p4 = document.createElement("p")
         let text4 = document.createTextNode(suspeitos)
         p4.appendChild(b4)
         p4.appendChild(text4)
         resultado.appendChild(p4)
 
-        let b5 = document.createElement("b") /*CASOS*/
-        b5.innerHTML = "<ion-icon name='bag-check-outline'></ion-icon> Casos: " 
+        let b5 = document.createElement("b") /*CASOS*/ /*<ion-icon name='bag-check-outline'></ion-icon> Confirmados: */
+        b5.innerHTML = "<ion-icon class='confirmados' name='checkmark-outline'></ion-icon> Confirmados: " 
         let p5 = document.createElement("p")
         let text5 = document.createTextNode(casos)
         p5.appendChild(b5)
