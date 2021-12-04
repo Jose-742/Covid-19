@@ -19,7 +19,7 @@ function requisicao() {
 				if(!document.getElementById('loading')) {
 					let imgLoading = document.createElement('img')
 					imgLoading.id = 'loading'
-					imgLoading.src = 'img/carregando2.gif'
+					imgLoading.src = 'img/carregando3.gif'
 					imgLoading.className = 'rounded mx-auto d-block'
 
 					document.getElementById('resultado').appendChild(imgLoading)
@@ -27,7 +27,7 @@ function requisicao() {
 
    
     let url = 'https://covid19-brazil-api.vercel.app/api/report/v1/brazil/uf/' + select;
-    criaAjaxGet(url, resposta)
+   criaAjaxGet(url, resposta)
 }
 
 function resposta() {
@@ -93,7 +93,7 @@ function resposta() {
         resultado.appendChild(p4)
 
         let b5 = document.createElement("b") /*CASOS*/ /*<ion-icon name='bag-check-outline'></ion-icon> Confirmados: */
-        b5.innerHTML = "<ion-icon class='confirmados' name='checkmark-outline'></ion-icon> Confirmados: " 
+        b5.innerHTML = "<ion-icon class='confirmados' name='checkmark-outline'></ion-icon> Casos: " 
         let p5 = document.createElement("p")
         let text5 = document.createTextNode(casos)
         p5.appendChild(b5)

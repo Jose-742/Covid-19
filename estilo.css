@@ -1,12 +1,13 @@
 body{
     background-color: rgb(32, 33, 36);
+    background-image: url(img/imagen.jpg);
 }
 #logo:hover{
     color: rgb(14, 69, 221);
 }
 
 .coluna1{
-    background-color: rgb(26, 26, 29);
+    background-color: rgba(26, 26, 29, 0.479); /*rgb(76, 76, 153);*/
     border-radius: 15px;
     margin-top: 10px;
     width: 500px;
@@ -26,7 +27,7 @@ body{
 
 .result{
    /* border: 1px solid green;*/
-    background-color: rgb(26, 26, 29);
+    background-color: rgba(26, 26, 29, 0.479);
     margin-top: 10px;
     color: rgba(255, 255, 255, 0.699);
     border-radius: 15px;
@@ -43,9 +44,10 @@ body{
 
 @media (max-width: 576px) {
     .coluna1{
-        background-color: rgb(26, 26, 29);
-        margin-top: 10px;
-        border-radius: 15px;
+        background-color: rgba(26, 26, 29, 0.479);
+        /*margin-top: 10px;*/
+        margin: 0px;
+        border-radius: 0px;/*15px;*/
         width: 100%;
         height: 200px;
         padding: 10px;
@@ -55,11 +57,12 @@ body{
     }
 
     .result{
-         background-color: rgb(26, 26, 29);
-         margin-top: 10px;
-         color: rgba(255, 255, 255, 0.699);
+         background-color: rgba(26, 26, 29, 0.479);
+         /*margin-top: 10px;*/
+         margin: 0px;
+         color: rgba(255, 255, 255, 0.938);
          font-size: 1.1em;
-         border-radius: 15px;
+         border-radius: 0px;/*15px;*/
          width: 100%;
          height: 300px;
          padding: 10px;
@@ -67,25 +70,42 @@ body{
      #botao{
          width: 100%;
      }
+     
+.result:hover{
+    /* border: 3px solid rgb(14, 69, 221);/*rgb(14, 221, 14) ;*/
+     box-shadow: none;
+ }
+ .coluna1:hover{
+    /*border: 3px solid rgb(14, 69, 221);/*rgb(14, 221, 14) ;*/
+    box-shadow: none;
+}
 }
 @media (min-width: 577px) and (max-width: 1199.98px) { 
     .coluna1{
-        background-color: rgb(26, 26, 29);
+        background-color: rgba(26, 26, 29, 0.479);
         border-radius: 15px;
         width: 100%;
-        height: 200px;
+        height: 300px;
         padding: 10px;
+    }
+    .col-sm-6{
+        margin: 0px;
+        padding: 3px;
+        width: 100%;
     }
 
     .result{
         /* border: 1px solid green;*/
-         background-color: rgb(26, 26, 29);
+         background-color: rgba(26, 26, 29, 0.479);
          color: rgba(255, 255, 255, 0.699);
          border-radius: 15px;
          width: 100%;
          height: 300px;
          padding: 10px;
      }
+     #botao{
+        width: 100%;
+    }
 }
 
 
@@ -100,7 +120,7 @@ body{
 #myFooter .footer-copyright{
     margin-bottom: 35px;
     text-align: center;
-    color: #777;
+    color: rgb(173, 168, 168);
 }
 
 #myFooter ul{
@@ -110,7 +130,7 @@ body{
 }
 
 #myFooter a{
-    color: #60686d;
+    color: #a9afb3;
     font-size: 18px;
 }
 
@@ -136,7 +156,7 @@ body{
     margin-right: 15px;
     margin-left: 20px;
     background-color: rgb(0, 0, 0);
-    color: #645e5e;
+    /*color: #a19696;*/
     border-radius: 51%;
     padding: 5px;
     height: 50px;
